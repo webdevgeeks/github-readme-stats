@@ -81,7 +81,7 @@ function calculateRank({
 
   const level = LEVELS[THRESHOLDS.findIndex((t) => rank * 100 <= t)];
 
-  return { level, percentile: all_commits /10 };
+  return { level, percentile: all_commits*10 };
 }
 
 export { calculateRank };

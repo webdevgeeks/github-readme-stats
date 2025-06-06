@@ -56,6 +56,7 @@ function calculateRank({
     STARS_WEIGHT = 5000;
   const FOLLOWERS_MEDIAN = 10,
     FOLLOWERS_WEIGHT = 500000;
+  
 
   const TOTAL_WEIGHT =
     COMMITS_WEIGHT +
@@ -80,7 +81,7 @@ function calculateRank({
 
   const level = LEVELS[THRESHOLDS.findIndex((t) => rank * 100 <= t)];
 
-  return { level, percentile: all_commits /1000 };
+  return { level, percentile: all_commits /10 };
 }
 
 export { calculateRank };

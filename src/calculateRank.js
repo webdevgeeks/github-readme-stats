@@ -47,7 +47,7 @@ function calculateRank({
   const COMMITS_MEDIAN = all_commits ? 1000 : 250,
     COMMITS_WEIGHT = 2;
   const PRS_MEDIAN = 50,
-    PRS_WEIGHT = 3;
+    PRS_WEIGHT = 5;
   const ISSUES_MEDIAN = 25,
     ISSUES_WEIGHT = 1;
   const REVIEWS_MEDIAN = 2,
